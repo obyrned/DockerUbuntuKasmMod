@@ -1,0 +1,13 @@
+#The UN and PW are listed in the readme and the online tutorials. Here they are again:
+#UN kasm_user
+#PW password
+
+version: '3'
+services:
+  website:
+    image: obyrned/ubuntu-kasm-mod:1.2
+    environment:
+      - VNC_PW=password
+    ports:
+      - "6901:6901"
+    restart: always
